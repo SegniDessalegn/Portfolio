@@ -1,0 +1,227 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'Cedarville Cursive', cursive; */
+}
+
+/* body{
+    background: white !important;
+} */
+#menubar{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1414124;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    align-items: center;
+}
+
+.sticky-contents li{
+    position: sticky;
+    top:0px;
+}
+
+
+.general-topic{
+    background-color: transparent;
+    font-size: 1.3em;
+    /* position: sticky;
+    top:20px; */
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:3em;
+    /* margin-top:3.6em; */
+    /* position: fixed; */
+    /* width:100%; */
+    z-index: 100000;
+    top: 0px;
+    text-align: center;
+    /* margin: 30px 10px 30px 10px; */
+}
+
+.general-topic h1{
+    margin: 30px 25px 0px 25px;
+}
+.fields .general-topic{
+    position: sticky;
+    top:0px;
+}
+
+
+.fields li{
+    position: sticky;
+    top:160px;
+    margin-top: 20vh;
+
+}
+
+
+
+/* .first-field{
+    position: sticky;
+    top:200px;
+}
+.second-field{
+    position: sticky;
+    top:250px;
+}
+.third-field{
+    position: sticky;
+    top: 300px;
+}
+.fourth-field{
+    position: sticky;
+    top: 350px;
+} */
+
+
+
+.lorem{
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+img{
+    width: 30vw;
+}
+
+.first{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 50px 200px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+    "image topic"
+    "image content";
+    background-color: rgb(206, 210, 219);;
+    /* margin-top:10vh; */
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(19, 15, 39, 0.5);
+    border: 1px solid rgba(19, 15, 39, 0.1);
+    padding: 10px;
+    min-height: 350px;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+/* .first{
+} */
+
+.first:hover{
+    /* position:relative;
+    top:-5px;
+    left:-5px; */
+    box-shadow: 5px 5px 10px;
+    transition: 0.5s;
+}
+
+.first div{
+    /* background-color: blue; */
+    /* border: 1px solid; */
+}
+.first div:last-child{
+    /* height:100px; */
+    /* background-color: red; */
+}
+
+.image{
+    /* margin-bottom: auto; */
+    grid-area: image;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image img{
+    /* height: 20vw; */
+        /* padding-top: 10px; */
+    width: 19vw;
+}
+.topic{
+    width:80%;
+    margin-top: 0.5em;
+    grid-area: topic;
+    text-align: center;
+}
+
+.content{
+    grid-area: content;
+    /* height:50px; */
+    width:95%;
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 1.5em;
+    /* background-color: blue; */
+}
+
+
+.options img{
+    position: absolute;
+    top:15px;
+    right: 10px;
+    margin-right: 10px;
+    display: none;
+    width:20px;
+}
+
+
+.paragaph{
+    margin:10vw;
+    text-align: justify;
+    line-height: 1.5em;
+    font-size: 1.3em;
+}
+
+@media (max-width:700px){
+
+    .first{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .image img{
+    width: 30%;
+}
+    .general-topic{
+        font-size: 0.8em;
+    }
+    .topic{
+        width: 100%;
+        font-size: 0.8em;
+    }
+    .content{
+        line-height: 1.3em;
+    }
+    .fields li{
+    top:130px;
+    }
+}
+
+@media (max-width:400px){
+    .general-topic{
+        font-size: 0.7em;
+    }
+    .topic{
+        width: 100%;
+        font-size: 0.6em;
+    }
+    .content{
+        width: 100%;
+        line-height: 1em;
+        font-size: 1em;
+    }
+}

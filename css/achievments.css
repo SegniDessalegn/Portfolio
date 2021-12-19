@@ -1,0 +1,129 @@
+
+
+body{
+    background: cover;
+}
+
+.topic{
+    margin:3em;
+    width:max-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em;
+}
+
+
+
+table{
+    position: relative;
+    /* background-color: greenyellow; */
+    background: transparent;
+    /* margin:10vw; */
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width:80%;
+    box-shadow: 1px 1px 5px;
+    max-width: 700px;
+    box-sizing: border-box;
+}
+
+
+.table-header{
+    font-size: 1.5em;
+    background-color: rgba(19, 15, 39, 0.9);
+    color: rgb(211, 212, 231);
+    height: 2em;
+}
+
+.year{
+    width:30%;
+}
+
+.achievment{
+    width:70%;
+}
+
+th, td{
+    text-align: start;
+}
+
+tr td{
+    background-color: transparent;
+    padding:1em 0em;
+    transition: 1s;
+    border-bottom:1px solid blue;
+    font-size: 1.2em;
+}
+tr td, tr th{
+    padding-left: 5px;
+}
+/* tr:not(.table-header){
+    font-size:1.1em;
+} */
+tr:not(.table-header):hover{
+    background-color: rgba(19, 15, 39, 0.1);
+    font-size: 110%;
+}
+
+/* tr:hover{
+    position: relative;
+    top:-5px;
+    left:-5px;
+    padding:3em;
+    width:138760%;
+    border:1.5px solid red;
+} */
+
+
+section article{
+    text-align: justify;
+    margin-top: 3em;
+    width:90%;
+    margin-left:auto;
+    margin-right: auto;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:700px){
+    .topic{
+        font-size: 100%;
+    }
+
+    table{
+        font-size: 80%;
+    }
+
+    .paragraph{
+        font-size: 70%;
+    }
+    th{
+        font-size: 75%;
+    }
+}
+
+@media (max-width:300px){
+    .topic{
+        font-size: 5vw;
+    }
+
+    table{
+        font-size: 60%;
+    }
+
+    .paragraph{
+        font-size: 60%;
+        line-height: 1.3em;
+    }
+}

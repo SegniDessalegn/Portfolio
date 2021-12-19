@@ -1,0 +1,156 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color: rgba(51, 68, 95, 0.5);
+}
+/* .container{
+    border:1px solid;
+    display: grid;
+    grid-template-rows: 50px 50fr 50px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+.one{
+    grid-area: header;
+    background-color: green;
+    position: sticky;
+    top:0px;
+}
+
+.two{
+    grid-area: main;
+    background-color: blue;
+}
+.three{
+    grid-area: footer;
+    position: sticky;
+    bottom:0vh;
+    background-color: yellow;
+} */
+
+.topic{
+    margin:20px 20px;
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.about-field{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1.9fr;
+}
+
+
+
+.image{
+    position: sticky;
+    top:30vh;
+    border: 5px solid;
+    width: min-content;
+    margin-left: 3vw;
+}
+
+.image img{
+    width: 20vw;
+    z-index: -1;
+}
+
+
+.contents{
+    /* background-color: red; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-top:10vh;
+    /* margin-left:3vw; */
+    font-size: 0.85em;
+    line-height: 1.5em;
+}
+
+
+
+ul li{
+    list-style-type: none;
+}
+
+ul{
+    margin-top:5vh;
+    margin-bottom:10vh;
+    margin-left:5vw;
+    margin-right:5vw;
+    border: 1px solid rgba(19, 15, 39, 0.2);;
+    padding:10px;
+    font-size: 2vw;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(19, 15, 39, 0.2);
+    background:rgba(206, 217, 221, 0.5);
+}
+
+ul h3{
+    background-color: rgba(19, 15, 39, 0.8);
+    color:rgb(255, 255, 255);
+    display: block;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    font-size: 0.9em;
+}
+
+
+@media (max-width:700px){
+
+    .contents{
+        margin-top:10px;
+        font-size: 1.8em;
+    }
+
+    .about-field{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .image img{
+        width: 35vw;
+    }
+
+
+    .image{
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    ul h3{
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    .topic{
+        font-size: 1.8em;
+    }
+}
+
+
+@media (max-width:400px) {
+    .contents{
+        font-size: 2.3em;
+    }
+    .topic{
+        font-size: 1.3em;
+    }
+}
+
+
+
+
+
